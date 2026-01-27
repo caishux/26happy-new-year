@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 核心：添加移动端视口标签，这是响应式的基础 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>2026马年大吉 - 万福齐来</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /* 中国风背景：红金渐变+祥云纹理 */
+            background: 
+                radial-gradient(circle at center, #ff6633 0%, #b30000 100%),
+                url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.5 0 6.7-.5 9.3-1.4 2.6-.9 4.9-2.3 6.8-4.1C38.6 10.5 43.3 9 48 9c4.7 0 9.4 1.5 13.2 4.5 1.9 1.8 4.2 3.2 6.8 4.1 2.6.9 5.8 1.4 9.3 1.4s6.7-.5 9.3-1.4c2.6-.9 4.9-2.3 6.8-4.1C81.4 10.5 86.1 9 91 9c4.7 0 9.4 1.5 13.2 4.5 1.9 1.8 4.2 3.2 6.8 4.1 2.6.9 5.8 1.4 9.3 1.4v2c-3.5 0-6.7.5-9.3 1.4-2.6.9-4.9 2.3-6.8 4.1C98.6 27.5 93.9 29 89 29c-4.7 0-9.4-1.5-13.2-4.5-1.9-1.8-4.2-3.2-6.8-4.1-2.6-.9-5.8-1.4-9.3-1.4s-6.7.5-9.3 1.4c-2.6.9-4.9 2.3-6.8 4.1C31.4 27.5 26.7 29 22 29c-4.7 0-9.4-1.5-13.2-4.5-1.9-1.8-4.2-3.2-6.8-4.1C12.7 20.5 9.5 20 6 20v-2z' fill='%23ffcc00' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+            background-blend-mode: overlay;
+            background-attachment: fixed;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Microsoft YaHei", sans-serif;
+            position: relative;
+        }
+
+        /* 中国风流苏样式 - 左右两侧悬挂 */
+        .tassel {
+            position: absolute;
+            top: 0;
+            width: 30px;
+            height: 200px;
+            pointer-events: none; /* 不遮挡交互元素 */
+            animation: tasselSwing 3s ease-in-out infinite alternate;
+        }
+
+        .tassel-left {
+            left: 50px;
+            animation-delay: 0s;
+        }
+
+        .tassel-right {
+            right: 50px;
+            animation-delay: 1.5s;
+        }
+
+        .tassel-top {
+            width: 30px;
+            height: 15px;
+            background: #ffcc00;
+            border-radius: 5px;
+            margin: 0 auto;
+        }
+
+        .tassel-thread {
+            width: 8px;
+            height: 20px;
+            background: #ff9933;
+            margin: 0 auto;
+        }
+
+        .tassel-fringe {
+            width: 30px;
+            height: 165px;
+            background: linear-gradient(to bottom, #ffcc00 0%, #ff6633 100%);
+            border-radius: 0 0 15px 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tassel-fringe::after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                90deg,
+                rgba(255, 255, 255, 0.1),
+                rgba(255, 255, 255, 0.1) 1px,
+                transparent 1px,
+                transparent 5px
+            );
+        }
+
+        /* 流苏轻微摆动动画 */
+        @keyframes tasselSwing {
+            0% { transform: rotate(-2deg); }
+            100% { transform: rotate(2deg); }
+        }
+
+        .main-btn {
+            padding: 20px 40px;
+            font-size: 24px;
+            background-color: #ffcc00;
+            color: #b30000;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            font-weight: bold;
+            z-index: 1000;
+            transition: transform 0.2s;
+        }
+
+        .main-btn:hover { transform: scale(1.1); }
+
+        /* 弹窗样式 */
+        .blessing-popup {
+            position: absolute;
+            background: #fff;
+            border: 3px solid #ffcc00;
+            border-radius: 15px;
+            padding: 20px;
+            min-width: 200px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            animation: popIn 0.3s ease-out;
+            cursor: move;
+            user-select: none;
+            z-index: 999;
+        }
+
+        .popup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+
+        .close-btn {
+            cursor: pointer;
+            background: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .content {
+            font-size: 18px;
+            color: #d40000;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        @keyframes popIn {
+            0% { transform: scale(0); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .horse-bg {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 100px;
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        /* 响应式核心：媒体查询 - 适配手机等小屏幕设备（768px以下） */
+        @media screen and (max-width: 768px) {
+            /* 1. 调整流苏位置和尺寸，避免遮挡中间内容 */
+            .tassel {
+                width: 20px;
+                height: 150px;
+            }
+            .tassel-left {
+                left: 15px;
+            }
+            .tassel-right {
+                right: 15px;
+            }
+            .tassel-top {
+                width: 20px;
+                height: 10px;
+            }
+            .tassel-thread {
+                width: 6px;
+                height: 15px;
+            }
+            .tassel-fringe {
+                width: 20px;
+                height: 125px;
+                border-radius: 0 0 10px 10px;
+            }
+
+            /* 2. 调整按钮尺寸，适配手机屏幕，避免过宽 */
+            .main-btn {
+                padding: 15px 30px;
+                font-size: 18px;
+            }
+
+            /* 3. 调整弹窗尺寸，避免超出手机屏幕 */
+            .blessing-popup {
+                padding: 15px;
+                min-width: 160px;
+            }
+            .content {
+                font-size: 16px;
+            }
+            .close-btn {
+                width: 22px;
+                height: 22px;
+                line-height: 22px;
+                font-size: 12px;
+            }
+
+            /* 4. 调整马年图标尺寸，避免占满手机底部 */
+            .horse-bg {
+                font-size: 60px;
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+
+        /* 额外适配超小屏幕（如小屏手机，375px以下） */
+        @media screen and (max-width: 375px) {
+            .main-btn {
+                padding: 12px 24px;
+                font-size: 16px;
+            }
+            .blessing-popup {
+                min-width: 140px;
+            }
+            .content {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 左右两侧流苏元素 -->
+    <div class="tassel tassel-left">
+        <div class="tassel-top"></div>
+        <div class="tassel-thread"></div>
+        <div class="tassel-fringe"></div>
+    </div>
+    <div class="tassel tassel-right">
+        <div class="tassel-top"></div>
+        <div class="tassel-thread"></div>
+        <div class="tassel-fringe"></div>
+    </div>
+
+    <button class="main-btn" onclick="startBlessing()">🏮 点开 2026 马年好运 🏮</button>
+    <div class="horse-bg">🐎</div>
+
+    <script>
+        const blessings = [
+            "🐎 马到成功！",
+            "✨ 2026 一马当先！",
+            "💰 财源广进，龙马精神！",
+            "🧧 阖家欢乐，万事如意！",
+            "🎉 2026 平安喜乐！",
+            "🌟 宏图大展，步步高升！",
+            "🍎 身体健康，长命百岁！",
+            "🍀 好运连连，福气满满！",
+            "💪 愿你驰骋千里，前程似锦！",
+            "🔥 事业红红火火！"
+        ];
+
+        function createPopup() {
+            const popup = document.createElement('div');
+            popup.className = 'blessing-popup';
+            
+            // 响应式优化：弹窗随机位置计算适配小屏幕，避免超出可视区域
+            const popupWidth = window.innerWidth <= 768 ? 200 : 250;
+            const popupHeight = window.innerWidth <= 768 ? 120 : 150;
+            const x = Math.random() * (window.innerWidth - popupWidth);
+            const y = Math.random() * (window.innerHeight - popupHeight);
+            popup.style.left = x + 'px';
+            popup.style.top = y + 'px';
+            
+            // 随机祝福语
+            const text = blessings[Math.floor(Math.random() * blessings.length)];
+            
+            popup.innerHTML = `
+                <div class="popup-header">
+                    <span>2026 新年祝福</span>
+                    <button class="close-btn" onclick="closeMe(this)">X</button>
+                </div>
+                <div class="content">${text}</div>
+            `;
+            
+            document.body.appendChild(popup);
+        }
+
+        function closeMe(btn) {
+            btn.parentElement.parentElement.remove();
+            // 经典的“关掉一个，生成两个”整蛊/祝福逻辑
+            setTimeout(createPopup, 200);
+            setTimeout(createPopup, 500);
+        }
+
+        function startBlessing() {
+            // 初始生成5个
+            for(let i=0; i<5; i++) {
+                setTimeout(createPopup, i * 300);
+            }
+            // 隐藏初始按钮
+            document.querySelector('.main-btn').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
