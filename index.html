@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <title>2026马年大吉 - 喜庆中国风</title>
+    <style>
+        /* 企业级移动端CSS重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent; /* 移除移动端点击高亮 */
+            -webkit-font-smoothing: antialiased; /* 字体抗锯齿 */
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* 防止移动端长按菜单 */
+        *:not(input):not(textarea) {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        /* 禁止图片和链接长按菜单 */
+        img, a {
+            -webkit-touch-callout: none;
+        }
+        
+        html {
+            font-size: 16px;
+            height: 100%;
+            overflow: hidden; /* 防止页面滚动 */
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff4d4d 0%, #ff3333 30%, #cc0000 100%);
+            height: 100vh;
+            height: -webkit-fill-available; /* 兼容iOS Safari */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, "STKaiti", "Microsoft YaHei", "SimSun", "PingFang SC", "Helvetica Neue", sans-serif;
+            color: #fff;
+            position: relative;
+            touch-action: manipulation; /* 优化触摸体验 */
+        }
+        
+        /* 防止移动端滚动 */
+        body, html {
+            overscroll-behavior: none;
+        }
+        
+        /* 喜庆背景纹理 - 优化移动端性能 */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+            background-image: 
+                url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffcc00' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E"),
+                radial-gradient(circle at 20% 30%, rgba(255, 204, 0, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+            background-size: 100px, auto, auto;
+            background-attachment: fixed; /* 移动端性能优化 */
+            will-change: transform; /* 硬件加速 */
+        }
+        
+        /* 云纹装饰 */
+        .cloud-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50,50 C70,30 90,30 110,50 C130,70 150,70 170,50 C190,30 190,10 170,10 C150,10 130,30 110,10 C90,-10 70,-10 50,10 C30,30 30,70 50,50 Z' fill='none' stroke='%23ffcc00' stroke-width='1' opacity='0.05'/%3E%3C/svg%3E");
+            background-size: 200px;
+            z-index: -1;
+            background-attachment: fixed;
+            will-change: transform;
+        }
+        
+        /* 开场覆盖层 - 喜庆红色渐变 */
+        .opening-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #ff3333 0%, #cc0000 30%, #990000 100%);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+            transition: opacity 1.2s ease-in-out;
+        }
+        
+        .opening-overlay.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .opening-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            padding: clamp(1rem, 4vw, 2rem);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            border: 3px solid rgba(255, 204, 0, 0.3);
+            backdrop-filter: blur(5px);
+            margin: 0 20px;
+            max-width: 90%;
+            animation: openingTextPulse 1.8s infinite alternate;
+        }
+        
+        /* 自定义马图片样式 */
+        .horse-image-container {
+            width: clamp(100px, 30vw, 180px);
+            height: clamp(100px, 30vw, 180px);
+            margin-bottom: clamp(1rem, 4vw, 2rem);
+            position: relative;
+            animation: horseImageGlow 2s infinite alternate;
+        }
+        
+        .horse-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 0 15px rgba(255, 204, 0, 0.7));
+            transition: opacity 1.5s ease;
+        }
+        
+        /* 当开场动画结束时，图片逐渐消失 */
+        .opening-overlay.fade-out .horse-image {
+            opacity: 0;
+        }
+        
+        @keyframes horseImageGlow {
+            0% { 
+                filter: drop-shadow(0 0 15px rgba(255, 204, 0, 0.7));
+                transform: scale(1) rotate(-1deg);
+            }
+            100% { 
+                filter: drop-shadow(0 0 25px rgba(255, 255, 0, 0.9));
+                transform: scale(1.05) rotate(1deg);
+            }
+        }
+        
+        .opening-text {
+            font-size: clamp(1.8rem, 8vw, 4.2rem); /* 响应式字体大小 */
+            color: #ffcc00;
+            text-shadow: 
+                0 0 20px #ff9900,
+                0 0 40px #ff9900,
+                3px 3px 5px rgba(0, 0, 0, 0.5);
+            letter-spacing: clamp(0.5rem, 4vw, 1.5rem); /* 响应式字间距 */
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.3;
+        }
+        
+        .opening-text::before {
+            content: "✨";
+            position: absolute;
+            left: -1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: clamp(1.5rem, 6vw, 2.5rem);
+        }
+        
+        .opening-text::after {
+            content: "✨";
+            position: absolute;
+            right: -1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: clamp(1.5rem, 6vw, 2.5rem);
+        }
+        
+        @keyframes openingTextPulse {
+            0% { 
+                transform: scale(1) rotate(-1deg); 
+                box-shadow: 
+                    0 0 15px rgba(255, 153, 0, 0.2),
+                    inset 0 0 15px rgba(255, 153, 0, 0.1);
+            }
+            100% { 
+                transform: scale(1.08) rotate(1deg); 
+                box-shadow: 
+                    0 0 25px rgba(255, 204, 0, 0.3),
+                    inset 0 0 20px rgba(255, 204, 0, 0.2);
+            }
+        }
+        
+        /* 主容器 - 移动端优化 */
+        .main-container {
+            width: 100%;
+            max-width: 800px;
+            padding: clamp(1rem, 4vw, 2rem); /* 响应式内边距 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease, transform 1s ease;
+            min-height: 100vh; /* 确保容器高度足够 */
+            overflow-y: auto; /* 允许内容滚动 */
+            -webkit-overflow-scrolling: touch; /* 移动端平滑滚动 */
+        }
+        
+        .main-container.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* 顶部横幅 - 移动端优化 */
+        .banner {
+            width: calc(100% - 40px); /* 留出安全边距 */
+            max-width: 600px;
+            background: linear-gradient(to right, #ff3333, #ff9900, #ffcc00, #ff9900, #ff3333);
+            border: 3px solid #ffcc00;
+            border-radius: 10px;
+            padding: clamp(0.8rem, 3vw, 1rem) clamp(1rem, 4vw, 2rem);
+            margin-bottom: clamp(1rem, 4vw, 2rem);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden; /* 防止内容溢出 */
+        }
+        
+        .banner::before, .banner::after {
+            content: "❖";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: clamp(1.2rem, 5vw, 2rem);
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .banner::before {
+            left: clamp(0.5rem, 2vw, 1rem);
+        }
+        
+        .banner::after {
+            right: clamp(0.5rem, 2vw, 1rem);
+        }
+        
+        .banner-text {
+            font-size: clamp(1.5rem, 7vw, 2.8rem);
+            font-weight: bold;
+            color: #fff;
+            letter-spacing: clamp(0.3rem, 3vw, 0.8rem);
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+            line-height: 1.3; /* 改善移动端行高 */
+            word-break: keep-all; /* 防止中文字符换行 */
+            white-space: nowrap; /* 防止文字换行 */
+            overflow: hidden; /* 防止溢出 */
+        }
+        
+        /* 马年标志区域 - 移动端优化 */
+        .horse-section {
+            position: relative;
+            margin: clamp(1rem, 4vw, 2rem) 0;
+            padding: clamp(1rem, 4vw, 2rem);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            border: 2px solid #ffcc00;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            width: calc(100% - 40px); /* 留出安全边距 */
+            max-width: 500px;
+        }
+        
+        .horse-symbol {
+            font-size: clamp(4rem, 20vw, 8rem); /* 响应式马图标 */
+            color: #ffcc00;
+            text-shadow: 0 0 20px rgba(255, 204, 0, 0.7);
+            margin: clamp(0.5rem, 2vw, 1rem) 0;
+            animation: horseGlow 2s infinite alternate;
+            display: block; /* 确保正确显示 */
+        }
+        
+        @keyframes horseGlow {
+            0% { text-shadow: 0 0 10px rgba(255, 204, 0, 0.7); }
+            100% { text-shadow: 0 0 25px rgba(255, 255, 255, 0.9); }
+        }
+        
+        .year-text {
+            font-size: clamp(2rem, 10vw, 3.5rem);
+            font-weight: bold;
+            color: #ffcc00;
+            letter-spacing: clamp(0.5rem, 4vw, 1rem);
+            margin: clamp(0.5rem, 2vw, 1rem) 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            line-height: 1.3;
+        }
+        
+        /* 中国风装饰元素 - 移动端隐藏 */
+        .chinese-decoration {
+            position: absolute;
+            pointer-events: none;
+            z-index: 5;
+            display: none; /* 移动端隐藏以节省空间 */
+        }
+        
+        .decoration-left {
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: #ffcc00;
+        }
+        
+        .decoration-right {
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: #ffcc00;
+        }
+        
+        /* 主按钮 - 移动端优化（符合Fitts定律） */
+        .main-btn {
+            padding: clamp(0.8rem, 3vw, 1.5rem) clamp(2rem, 8vw, 4rem);
+            font-size: clamp(1.2rem, 5vw, 1.8rem);
+            background: linear-gradient(145deg, #ffcc00, #ff9900);
+            color: #cc0000;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            letter-spacing: clamp(0.2rem, 2vw, 0.5rem);
+            margin: clamp(1rem, 4vw, 2rem) 0;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+            z-index: 20;
+            min-height: 60px; /* 确保触摸目标足够大 */
+            min-width: 200px; /* 确保按钮足够宽 */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            touch-action: manipulation; /* 优化触摸 */
+        }
+        
+        /* 防止移动端按钮点击延迟 */
+        @media (hover: hover) {
+            .main-btn:hover {
+                transform: translateY(-5px) scale(1.05);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+            }
+        }
+        
+        .main-btn:active {
+            transform: scale(0.98); /* 移动端点击反馈 */
+            transition: transform 0.1s;
+        }
+        
+        .main-btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.7s;
+        }
+        
+        /* 操作提示 - 移动端优化 */
+        .instruction {
+            font-size: clamp(0.9rem, 3.5vw, 1.2rem);
+            color: #fff;
+            margin-top: clamp(1rem, 4vw, 1.5rem);
+            max-width: 600px;
+            line-height: 1.6;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.2);
+            padding: clamp(0.8rem, 3vw, 1rem) clamp(1rem, 4vw, 1.5rem);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 204, 0, 0.3);
+            width: calc(100% - 40px); /* 留出安全边距 */
+        }
+        
+        /* 音乐控制 - 移动端优化（固定在安全区域） */
+        .music-control {
+            position: fixed;
+            top: env(safe-area-inset-top, 20px); /* iOS安全区域适配 */
+            top: max(env(safe-area-inset-top, 20px), 20px); /* 取安全区域和最小值的较大者 */
+            right: env(safe-area-inset-right, 20px);
+            right: max(env(safe-area-inset-right, 20px), 20px);
+            width: clamp(45px, 12vw, 60px);
+            height: clamp(45px, 12vw, 60px);
+            background: linear-gradient(145deg, #ff9900, #ffcc00);
+            border: 2px solid #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: clamp(1.5rem, 5vw, 1.8rem);
+            color: #cc0000;
+            transition: all 0.3s;
+            z-index: 100;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 0.5s, transform 0.5s;
+            touch-action: manipulation; /* 优化触摸 */
+            -webkit-tap-highlight-color: transparent; /* 移除点击高亮 */
+        }
+        
+        .music-control.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        .music-control:active {
+            transform: scale(0.95); /* 移动端点击反馈 */
+        }
+        
+        /* 祝福弹窗样式 - 移动端深度优化 */
+        .blessing-popup {
+            position: fixed;
+            background: linear-gradient(145deg, #fff9e6, #ffe6cc);
+            border: 4px solid #ff3333;
+            border-radius: 15px;
+            padding: clamp(1rem, 3vw, 1.5rem) clamp(1.2rem, 4vw, 2rem);
+            width: min(300px, 85vw); /* 最大宽度300px，最小85%视口宽度 */
+            box-shadow: 
+                0 15px 35px rgba(0, 0, 0, 0.5),
+                inset 0 0 20px rgba(255, 204, 0, 0.2);
+            z-index: 1000;
+            animation: popIn 0.4s ease-out;
+            cursor: move;
+            user-select: none;
+            backdrop-filter: blur(5px);
+            touch-action: none; /* 拖动时禁用默认触摸行为 */
+            max-height: 80vh; /* 防止弹窗过高 */
+            overflow: hidden; /* 防止内容溢出 */
+        }
+        
+        /* 移动端拖动优化 */
+        .blessing-popup.dragging {
+            transition: none; /* 拖动时禁用过渡效果 */
+            z-index: 1002; /* 提高拖动时的层级 */
+        }
+        
+        .popup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: clamp(0.8rem, 2.5vw, 1rem);
+            padding-bottom: clamp(0.5rem, 1.5vw, 0.6rem);
+            border-bottom: 2px solid #ffcc00;
+            touch-action: none; /* 头部区域拖动优化 */
+        }
+        
+        .popup-title {
+            font-size: clamp(1rem, 3.5vw, 1.2rem);
+            color: #990000;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            flex: 1; /* 占据剩余空间 */
+            overflow: hidden; /* 防止标题过长 */
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        .popup-title::before {
+            content: "✨";
+            margin-right: 0.5rem;
+            flex-shrink: 0; /* 防止图标被压缩 */
+        }
+        
+        .close-btn {
+            cursor: pointer;
+            background: linear-gradient(to bottom, #ff3333, #990000);
+            color: #ffcc00;
+            border: 2px solid #ffcc00;
+            border-radius: 50%;
+            width: clamp(28px, 8vw, 32px);
+            height: clamp(28px, 8vw, 32px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: clamp(1rem, 3.5vw, 1.2rem);
+            transition: all 0.2s;
+            flex-shrink: 0; /* 防止按钮被压缩 */
+            touch-action: manipulation; /* 优化触摸 */
+            -webkit-tap-highlight-color: transparent; /* 移除点击高亮 */
+        }
+        
+        .close-btn:active {
+            transform: scale(0.9); /* 移动端点击反馈 */
+        }
+        
+        .popup-content {
+            font-size: clamp(1.1rem, 4vw, 1.3rem);
+            color: #cc3300;
+            text-align: center;
+            font-weight: bold;
+            line-height: 1.5;
+            padding: clamp(0.6rem, 2vw, 0.8rem);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            border: 1px dashed #ff9900;
+            word-break: break-word; /* 长文本自动换行 */
+            overflow-wrap: break-word; /* 防止文本溢出 */
+        }
+        
+        @keyframes popIn {
+            0% { transform: scale(0) rotate(-10deg); opacity: 0; }
+            70% { transform: scale(1.05) rotate(5deg); }
+            100% { transform: scale(1) rotate(0); opacity: 1; }
+        }
+        
+        /* 强制评分弹窗 - 移动端深度优化 */
+        .rating-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 9998;
+            display: none;
+            backdrop-filter: blur(5px);
+        }
+        
+        .rating-overlay.active {
+            display: block;
+        }
+        
+        .rating-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            background: linear-gradient(145deg, #fff9e6, #ffe6cc);
+            border: 5px solid #ff3333;
+            border-radius: 15px;
+            padding: clamp(1.5rem, 5vw, 2rem) clamp(1.8rem, 6vw, 2.5rem);
+            width: min(350px, 90vw); /* 最大宽度350px，最小90%视口宽度 */
+            max-width: 90%;
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.7),
+                inset 0 0 20px rgba(255, 204, 0, 0.2);
+            z-index: 9999;
+            transition: transform 0.4s ease;
+            display: none;
+            max-height: 85vh; /* 防止弹窗过高 */
+            overflow-y: auto; /* 允许内容滚动 */
+            -webkit-overflow-scrolling: touch; /* 移动端平滑滚动 */
+        }
+        
+        .rating-popup.active {
+            transform: translate(-50%, -50%) scale(1);
+            display: block;
+        }
+        
+        .rating-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: clamp(1rem, 3vw, 1.2rem);
+            padding-bottom: clamp(0.6rem, 2vw, 0.8rem);
+            border-bottom: 2px solid #ffcc00;
+        }
+        
+        .rating-title {
+            font-size: clamp(1.4rem, 5vw, 1.6rem);
+            color: #990000;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.3;
+        }
+        
+        .rating-prompt {
+            text-align: center;
+            color: #cc3300;
+            margin-bottom: clamp(1.2rem, 4vw, 1.5rem);
+            font-size: clamp(1rem, 3.5vw, 1.2rem);
+            line-height: 1.5;
+            font-weight: bold;
+        }
+        
+        .stars-container {
+            display: flex;
+            justify-content: center;
+            gap: clamp(0.5rem, 2vw, 0.8rem);
+            margin: clamp(1.2rem, 4vw, 1.5rem) 0;
+            flex-wrap: wrap; /* 小屏幕换行 */
+        }
+        
+        .star {
+            font-size: clamp(2rem, 8vw, 2.5rem);
+            color: #ffcc00;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            touch-action: manipulation; /* 优化触摸 */
+            -webkit-tap-highlight-color: transparent; /* 移除点击高亮 */
+        }
+        
+        .star:active {
+            transform: scale(0.9); /* 移动端点击反馈 */
+        }
+        
+        .star.active {
+            color: #ff9900;
+            transform: scale(1.3);
+            text-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+        }
+        
+        .rating-submit {
+            display: block;
+            width: 100%;
+            padding: clamp(0.8rem, 3vw, 1rem);
+            background: linear-gradient(145deg, #ffcc00, #ff9900);
+            color: #990000;
+            border: none;
+            border-radius: 10px;
+            font-size: clamp(1rem, 3.5vw, 1.2rem);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: clamp(1rem, 3vw, 1.2rem);
+            font-weight: bold;
+            letter-spacing: clamp(0.1rem, 1vw, 0.2rem);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            min-height: 50px; /* 确保触摸目标足够大 */
+            touch-action: manipulation; /* 优化触摸 */
+            -webkit-tap-highlight-color: transparent; /* 移除点击高亮 */
+        }
+        
+        .rating-submit:active {
+            transform: scale(0.98); /* 移动端点击反馈 */
+        }
+        
+        .rating-submit:disabled {
+            background: linear-gradient(145deg, #cccccc, #999999);
+            color: #666666;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .rating-submit:disabled:active {
+            transform: none; /* 禁用状态下无点击反馈 */
+        }
+        
+        .rating-feedback {
+            text-align: center;
+            color: #990000;
+            margin-top: clamp(1rem, 3vw, 1.2rem);
+            font-size: clamp(1rem, 3.5vw, 1.1rem);
+            line-height: 1.5;
+            display: none;
+            font-weight: bold;
+        }
+        
+        /* 评分提示 */
+        .rating-hint {
+            text-align: center;
+            color: #ff3333;
+            margin-top: 0.5rem;
+            font-size: clamp(0.9rem, 3vw, 1rem);
+            font-weight: bold;
+            display: none;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 0.7; }
+            50% { opacity: 1; }
+            100% { opacity: 0.7; }
+        }
+        
+        /* 中国风装饰 - 灯笼（移动端隐藏） */
+        .lantern {
+            position: fixed;
+            width: 60px;
+            height: 80px;
+            background: radial-gradient(circle at 30% 30%, #ff3333 0%, #990000 100%);
+            border-radius: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            z-index: 5;
+            opacity: 0;
+            transition: opacity 1s ease;
+            display: none; /* 移动端隐藏以节省资源 */
+        }
+        
+        .lantern.show {
+            opacity: 1;
+        }
+        
+        .lantern::before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 15px;
+            background: #ffcc00;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .lantern::after {
+            content: "福";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        
+        .lantern-left {
+            left: 50px;
+            top: 100px;
+            animation: lanternFloat 4s ease-in-out infinite;
+        }
+        
+        .lantern-right {
+            right: 50px;
+            top: 100px;
+            animation: lanternFloat 4s ease-in-out infinite 2s;
+        }
+        
+        @keyframes lanternFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        /* 页脚 - 移动端优化 */
+        .footer {
+            position: fixed;
+            bottom: max(env(safe-area-inset-bottom, 20px), 20px); /* iOS安全区域适配 */
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: clamp(0.8rem, 3vw, 1rem);
+            color: #ffcc00;
+            letter-spacing: clamp(0.1rem, 1vw, 0.2rem);
+            z-index: 5;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+            padding: 0 20px; /* 左右内边距防止贴边 */
+            box-sizing: border-box;
+        }
+        
+        .footer.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* 烟花效果 - 增强版 */
+        .firework {
+            position: absolute;
+            pointer-events: none;
+            z-index: 998;
+        }
+        
+        .firework-particle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            opacity: 0;
+            transform-origin: center;
+            box-shadow: 0 0 10px currentColor;
+            will-change: transform, opacity; /* 硬件加速 */
+        }
+        
+        /* 开场大烟花特效 - 增强版 */
+        .opening-firework {
+            position: fixed;
+            pointer-events: none;
+            z-index: 9998;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, #ffcc00, #ff9900, #ff3333);
+            opacity: 0;
+            box-shadow: 0 0 15px #ff9900;
+            will-change: transform, opacity;
+        }
+        
+        /* 烟花尾迹 */
+        .firework-trail {
+            position: fixed;
+            pointer-events: none;
+            z-index: 9997;
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            opacity: 0;
+            background: #ffcc00;
+            will-change: transform, opacity;
+        }
+        
+        /* 动画效果 */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-in {
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+        }
+        
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+    </style>
+</head>
+<body>
+    <!-- 开场覆盖层和烟花效果 -->
+    <div class="opening-overlay" id="openingOverlay">
+        <div class="opening-content">
+            <div class="horse-image-container">
+                <!-- 这里可以替换为您喜欢的图片 -->
+                <img src="123456789.png" 
+                     alt="骏马图" class="horse-image">
+            </div>
+            <div class="opening-text">贰零贰陆 马年大吉</div>
+        </div>
+    </div>
+    
+    <!-- 喜庆背景 -->
+    <div class="background"></div>
+    <div class="cloud-pattern"></div>
+    
+    <!-- 灯笼装饰（移动端隐藏） -->
+    <div class="lantern lantern-left"></div>
+    <div class="lantern lantern-right"></div>
+    
+    <!-- 音乐控制 -->
+    <div class="music-control" id="musicControl">
+        <span id="musicIcon">♪</span>
+    </div>
+    
+    <!-- 主内容区 -->
+    <div class="main-container" id="mainContainer">
+        <div class="banner animate-in">
+            <div class="banner-text">贰零贰陆 · 马年大吉</div>
+        </div>
+        
+        <div class="horse-section animate-in delay-1">
+            <div class="horse-symbol">🐎</div>
+            <div class="year-text">2026</div>
+        </div>
+        
+        <button class="main-btn animate-in delay-2" id="startBtn">开启马年鸿运</button>
+        
+        <div class="instruction animate-in delay-3">
+            点击按钮开启祝福，关闭弹出的祝福卡片
+        </div>
+    </div>
+    
+    <!-- 页脚 -->
+    <div class="footer" id="footer">
+        2026 · 马年大吉 · 喜庆中国风 
+    </div>
+    
+    <!-- 强制评分弹窗 - 无关闭按钮 -->
+    <div class="rating-overlay" id="ratingOverlay"></div>
+    <div class="rating-popup" id="ratingPopup">
+        <div class="rating-header">
+            <div class="rating-title">请给个评分</div>
+        </div>
+        <div class="rating-prompt">
+            收到我的祝福不得来个五星！
+        </div>
+        <div class="stars-container">
+            <div class="star" data-rating="1">★</div>
+            <div class="star" data-rating="2">★</div>
+            <div class="star" data-rating="3">★</div>
+            <div class="star" data-rating="4">★</div>
+            <div class="star" data-rating="5">★</div>
+        </div>
+        <div class="rating-hint" id="ratingHint">请先选择评分星级！</div>
+        <button class="rating-submit" id="ratingSubmit" disabled>提交评分</button>
+        <div class="rating-feedback" id="ratingFeedback">
+             朋友们，新年快乐！
+            <br>—— 才浅的俊睿
+        </div>
+    </div>
+    
+    <!-- 音频元素 -->
+    <audio id="bgMusic" loop preload="auto" playsinline>
+        <source src="M500001936qu1DqoLD.mp3" type="audio/mpeg">
+        您的浏览器不支持音频播放，请更换浏览器尝试。
+    </audio>
+
+    <script>
+        // 祝福语数据
+        const blessings = [
+            "🐎 马到成功！一马当先！",
+            "✨ 2026 马年大吉，万事如意！",
+            "💰 财源广进，金玉满堂！",
+            "🧧 阖家欢乐，福寿安康！",
+            "🎉 2026 平安喜乐，岁岁平安！",
+            "🌟 宏图大展，步步高升！",
+            "🍎 身体健康，长命百岁！",
+            "🍀 好运连连，福气满满！",
+            "💪 龙马精神，驰骋千里！",
+            "🔥 事业红火，蒸蒸日上！",
+            "🌸 花开富贵，竹报平安！",
+            "🎋 年年有余，岁岁今朝！",
+            "🏮 灯笼高挂，鸿运当头！",
+            "🎎 家庭和睦，幸福美满！",
+            "💮 五福临门，六六大顺！",
+            "🥮 团团圆圆，甜甜蜜蜜！",
+            "🎁 心想事成，美梦成真！",
+            "🎐 风调雨顺，国泰民安！",
+            "🎏 鱼跃龙门，前程似锦！",
+            "🧨 爆竹声中一岁除，春风送暖入屠苏！"
+        ];
+        
+        // 初始化变量
+        let isMusicPlaying = false;
+        let closeCount = 0;
+        let selectedRating = 0;
+        let ratingTriggered = false;
+        
+        // DOM元素
+        const openingOverlay = document.getElementById('openingOverlay');
+        const mainContainer = document.getElementById('mainContainer');
+        const musicControl = document.getElementById('musicControl');
+        const musicIcon = document.getElementById('musicIcon');
+        const bgMusic = document.getElementById('bgMusic');
+        const startBtn = document.getElementById('startBtn');
+        const ratingOverlay = document.getElementById('ratingOverlay');
+        const ratingPopup = document.getElementById('ratingPopup');
+        const ratingSubmit = document.getElementById('ratingSubmit');
+        const stars = document.querySelectorAll('.star');
+        const ratingFeedback = document.getElementById('ratingFeedback');
+        const ratingHint = document.getElementById('ratingHint');
+        const footer = document.getElementById('footer');
+        
+        // 检测设备类型
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+        
+        // 初始化页面
+        document.addEventListener('DOMContentLoaded', function() {
+            // 设置音频属性
+            bgMusic.volume = 0.6;
+            bgMusic.loop = true;
+            
+            // iOS特殊处理
+            if (isIOS) {
+                // iOS需要用户交互才能播放音频
+                document.body.addEventListener('touchstart', initAudioOnce, { once: true });
+                document.body.addEventListener('touchend', initAudioOnce, { once: true });
+            } else {
+                // 其他设备直接尝试播放
+                initAudio();
+            }
+            
+            // 开始开场动画
+            createOpeningFireworks();
+            
+            // 音乐控制事件
+            musicControl.addEventListener('click', toggleMusic);
+            musicControl.addEventListener('touchend', function(e) {
+                e.preventDefault();
+                toggleMusic();
+            });
+            
+            // 主按钮事件
+            startBtn.addEventListener('click', startBlessing);
+            startBtn.addEventListener('touchend', function(e) {
+                e.preventDefault();
+                startBlessing();
+            });
+            
+            // 提交评分事件
+            ratingSubmit.addEventListener('click', submitRating);
+            ratingSubmit.addEventListener('touchend', function(e) {
+                e.preventDefault();
+                submitRating();
+            });
+            
+            // 星级评分事件
+            stars.forEach(star => {
+                star.addEventListener('click', function() {
+                    selectedRating = parseInt(this.getAttribute('data-rating'));
+                    updateStars();
+                    ratingSubmit.disabled = false;
+                    ratingHint.style.display = 'none';
+                });
+                
+                star.addEventListener('touchend', function(e) {
+                    e.preventDefault();
+                    selectedRating = parseInt(this.getAttribute('data-rating'));
+                    updateStars();
+                    ratingSubmit.disabled = false;
+                    ratingHint.style.display = 'none';
+                });
+                
+                star.addEventListener('touchstart', function(e) {
+                    // 防止触摸时触发其他事件
+                    e.stopPropagation();
+                });
+            });
+            
+            // 添加初始动画效果
+            setTimeout(() => {
+                document.querySelectorAll('.animate-in').forEach(el => {
+                    el.style.opacity = '1';
+                });
+            }, 4500);
+            
+            // 阻止ESC键关闭评分弹窗
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && ratingPopup.classList.contains('active')) {
+                    e.preventDefault();
+                    showRatingHint();
+                }
+            });
+            
+            // 阻止点击遮罩层关闭评分弹窗
+            ratingOverlay.addEventListener('click', function(e) {
+                if (ratingPopup.classList.contains('active')) {
+                    e.stopPropagation();
+                    showRatingHint();
+                }
+            });
+            
+            // 移动端触摸事件优化
+            ratingOverlay.addEventListener('touchstart', function(e) {
+                if (ratingPopup.classList.contains('active')) {
+                    e.stopPropagation();
+                }
+            });
+            
+            // 防止移动端双击缩放
+            let lastTouchEnd = 0;
+            document.addEventListener('touchend', function(event) {
+                const now = Date.now();
+                if (now - lastTouchEnd <= 300) {
+                    event.preventDefault();
+                }
+                lastTouchEnd = now;
+            }, false);
+            
+            // 防止移动端滚动
+            document.addEventListener('touchmove', function(e) {
+                if (ratingPopup.classList.contains('active')) {
+                    e.preventDefault();
+                }
+            }, { passive: false });
+            
+            // 监听视口变化（旋转）
+            window.addEventListener('resize', handleResize);
+            window.addEventListener('orientationchange', handleResize);
+            
+            // 初始调整
+            handleResize();
+        });
+        
+        // 初始化音频（iOS需要用户交互）
+        function initAudioOnce() {
+            initAudio();
+        }
+        
+        function initAudio() {
+            bgMusic.play().then(() => {
+                isMusicPlaying = true;
+                musicIcon.textContent = '♫';
+                musicControl.style.background = 'linear-gradient(145deg, #ffcc00, #ff9900)';
+            }).catch(e => {
+                console.log("音频播放需要用户交互");
+                // 显示提示
+                if (isMobile) {
+                    const hint = document.createElement('div');
+                    hint.innerHTML = '👆 点击屏幕任意位置激活音频';
+                    hint.style.cssText = `
+                        position: fixed;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background: rgba(0,0,0,0.8);
+                        color: #ffcc00;
+                        padding: 1rem 1.5rem;
+                        border-radius: 10px;
+                        font-size: 1rem;
+                        z-index: 1003;
+                        text-align: center;
+                        animation: fadeInUp 0.5s ease;
+                    `;
+                    document.body.appendChild(hint);
+                    
+                    setTimeout(() => {
+                        hint.remove();
+                    }, 3000);
+                }
+            });
+        }
+        
+        // 处理视口变化
+        function handleResize() {
+            // 调整弹窗位置，防止超出屏幕
+            document.querySelectorAll('.blessing-popup').forEach(popup => {
+                const rect = popup.getBoundingClientRect();
+                const windowWidth = window.innerWidth;
+                const windowHeight = window.innerHeight;
+                
+                // 如果弹窗超出屏幕，调整位置
+                if (rect.right > windowWidth) {
+                    popup.style.left = `${windowWidth - rect.width - 10}px`;
+                }
+                if (rect.bottom > windowHeight) {
+                    popup.style.top = `${windowHeight - rect.height - 10}px`;
+                }
+                if (rect.left < 0) {
+                    popup.style.left = '10px';
+                }
+                if (rect.top < 0) {
+                    popup.style.top = '10px';
+                }
+            });
+        }
+        
+        // 显示评分提示
+        function showRatingHint() {
+            ratingHint.textContent = '请先完成评分才能继续！';
+            ratingHint.style.display = 'block';
+            
+            // 添加震动效果
+            ratingPopup.style.animation = 'none';
+            setTimeout(() => {
+                ratingPopup.style.animation = '';
+            }, 10);
+            
+            // 短暂震动弹窗
+            const originalTransform = ratingPopup.style.transform;
+            ratingPopup.style.transform = originalTransform + ' translateY(-5px)';
+            setTimeout(() => {
+                ratingPopup.style.transform = originalTransform + ' translateY(5px)';
+            }, 50);
+            setTimeout(() => {
+                ratingPopup.style.transform = originalTransform;
+            }, 100);
+        }
+        
+        // 开场烟花特效（增强版）
+        function createOpeningFireworks() {
+            // 烟花数量不受移动端限制
+            const fireworkCount = 10; // 增加烟花数量
+            
+            for (let i = 0; i < fireworkCount; i++) {
+                setTimeout(() => {
+                    createBigFirework();
+                }, 600 + i * 500);
+            }
+            
+            // 4秒后淡出开场覆盖层并显示主内容
+            setTimeout(() => {
+                openingOverlay.classList.add('fade-out');
+                
+                // 显示主内容
+                setTimeout(() => {
+                    mainContainer.classList.add('show');
+                    musicControl.classList.add('show');
+                    footer.classList.add('show');
+                }, 500);
+            }, 4000);
+        }
+        
+        // 创建大型烟花（增强版）
+        function createBigFirework() {
+            const colorSets = [
+                ['#ffcc00', '#ff9900', '#ff3333'],
+                ['#ffffff', '#ffcc00', '#ff9900'],
+                ['#ffcc00', '#ffffff', '#ff3333'],
+                ['#ff9900', '#ffcc00', '#ffffff']
+            ];
+            
+            const colorSet = colorSets[Math.floor(Math.random() * colorSets.length)];
+            
+            // 烟花发射点
+            const launchX = 100 + Math.random() * (window.innerWidth - 200);
+            const launchY = window.innerHeight;
+            
+            // 在目标位置爆炸
+            const targetY = 80 + Math.random() * (window.innerHeight / 2);
+            const targetX = launchX + (Math.random() - 0.5) * 150;
+            
+            // 增强版粒子数量
+            const particleCount = 100; // 增加粒子数量
+            createExplosion(targetX, targetY, colorSet, particleCount);
+        }
+        
+        // 创建爆炸效果（增强版）
+        function createExplosion(x, y, colorSet, particleCount = 100) {
+            const particles = particleCount; // 不再减少粒子数量
+            
+            for (let i = 0; i < particles; i++) {
+                setTimeout(() => {
+                    const particle = document.createElement('div');
+                    particle.className = 'firework-particle';
+                    particle.style.left = `${x}px`;
+                    particle.style.top = `${y}px`;
+                    const color = colorSet[Math.floor(Math.random() * colorSet.length)];
+                    particle.style.backgroundColor = color;
+                    particle.style.color = color;
+                    particle.style.boxShadow = `0 0 10px ${color}, 0 0 20px ${color}`;
+                    
+                    document.body.appendChild(particle);
+                    
+                    const angle = (i / particles) * Math.PI * 2;
+                    const distance = 80 + Math.random() * 200; // 增加爆炸范围
+                    const targetX = x + Math.cos(angle) * distance;
+                    const targetY = y + Math.sin(angle) * distance;
+                    const size = 4 + Math.random() * 10; // 增加粒子大小
+                    const duration = 800 + Math.random() * 600; // 增加持续时间
+                    
+                    // 粒子动画
+                    particle.animate([
+                        { 
+                            opacity: 0, 
+                            transform: `scale(0) translate(0, 0)`, 
+                            width: `${size}px`, 
+                            height: `${size}px` 
+                        },
+                        { 
+                            opacity: 1, 
+                            transform: `scale(1.5) translate(${Math.cos(angle) * distance/2}px, ${Math.sin(angle) * distance/2}px)`, 
+                            width: `${size}px`, 
+                            height: `${size}px` 
+                        },
+                        { 
+                            opacity: 0.8, 
+                            transform: `scale(1) translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px)`, 
+                            width: `${size}px`, 
+                            height: `${size}px` 
+                        },
+                        { 
+                            opacity: 0, 
+                            transform: `scale(0.5) translate(${Math.cos(angle) * distance * 1.1}px, ${Math.sin(angle) * distance * 1.1}px)`, 
+                            width: `${size}px`, 
+                            height: `${size}px` 
+                        }
+                    ], {
+                        duration: duration,
+                        easing: 'cubic-bezier(0.1, 0.8, 0.2, 1)'
+                    });
+                    
+                    // 移除元素
+                    setTimeout(() => {
+                        if (particle.parentNode) {
+                            particle.parentNode.removeChild(particle);
+                        }
+                    }, duration);
+                }, i * 5); // 减少延迟，使烟花更密集
+            }
+        }
+        
+        // 创建祝福弹窗
+        function createPopup(text) {
+            const popup = document.createElement('div');
+            popup.className = 'blessing-popup';
+            
+            // 计算弹窗尺寸
+            const popupWidth = isMobile ? Math.min(300, window.innerWidth * 0.85) : 300;
+            const popupHeight = 150; // 预估高度
+            
+            // 随机位置，确保在可视区域内
+            const maxX = window.innerWidth - popupWidth - 20;
+            const maxY = window.innerHeight - popupHeight - 20;
+            const x = Math.max(20, Math.min(maxX, Math.random() * maxX));
+            const y = Math.max(20, Math.min(maxY, Math.random() * maxY));
+            
+            popup.style.width = `${popupWidth}px`;
+            popup.style.left = `${x}px`;
+            popup.style.top = `${y}px`;
+            
+            popup.innerHTML = `
+                <div class="popup-header">
+                    <div class="popup-title">马年祝福</div>
+                    <div class="close-btn">×</div>
+                </div>
+                <div class="popup-content">${text}</div>
+            `;
+            
+            document.body.appendChild(popup);
+            
+            // 添加关闭事件
+            const closeBtn = popup.querySelector('.close-btn');
+            closeBtn.addEventListener('click', function() {
+                closePopup(popup);
+            });
+            
+            // 移动端触摸关闭
+            closeBtn.addEventListener('touchend', function(e) {
+                e.preventDefault();
+                closePopup(popup);
+            });
+            
+            // 添加拖动功能（移动端优化）
+            makeDraggable(popup);
+            
+            // 为每个弹窗创建烟花效果
+            createFirework(x + (popupWidth / 2), y + (popupHeight / 2));
+            
+            return popup;
+        }
+        
+        // 创建烟花效果
+        function createFirework(x, y) {
+            const colors = ['#ffcc00', '#ff9900', '#ff3333', '#ffffff', '#ffcc00'];
+            
+            // 为每个弹窗创建多个烟花
+            for (let j = 0; j < 2; j++) {
+                setTimeout(() => {
+                    const offsetX = (Math.random() - 0.5) * 100;
+                    const offsetY = (Math.random() - 0.5) * 100;
+                    
+                    for (let i = 0; i < 12; i++) {
+                        setTimeout(() => {
+                            const particle = document.createElement('div');
+                            particle.className = 'firework-particle';
+                            particle.style.left = `${x + offsetX}px`;
+                            particle.style.top = `${y + offsetY}px`;
+                            const color = colors[Math.floor(Math.random() * colors.length)];
+                            particle.style.backgroundColor = color;
+                            particle.style.color = color;
+                            particle.style.boxShadow = `0 0 8px ${color}`;
+                            
+                            document.body.appendChild(particle);
+                            
+                            const angle = (i / 12) * Math.PI * 2;
+                            const distance = 30 + Math.random() * 60;
+                            
+                            // 粒子动画
+                            particle.animate([
+                                { 
+                                    opacity: 0, 
+                                    transform: 'scale(0) translate(0, 0)' 
+                                },
+                                { 
+                                    opacity: 1, 
+                                    transform: `scale(1.2) translate(${Math.cos(angle) * distance/2}px, ${Math.sin(angle) * distance/2}px)` 
+                                },
+                                { 
+                                    opacity: 0, 
+                                    transform: `scale(0.5) translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px)` 
+                                }
+                            ], {
+                                duration: 600,
+                                easing: 'ease-out'
+                            });
+                            
+                            // 移除元素
+                            setTimeout(() => {
+                                if (particle.parentNode) {
+                                    particle.parentNode.removeChild(particle);
+                                }
+                            }, 600);
+                        }, i * 40);
+                    }
+                }, j * 200);
+            }
+        }
+        
+        // 关闭弹窗
+        function closePopup(popup) {
+            // 淡出效果
+            popup.style.transition = 'opacity 0.3s, transform 0.3s';
+            popup.style.opacity = '0';
+            popup.style.transform = 'scale(0.9)';
+            
+            // 增加关闭计数
+            closeCount++;
+            
+            // 检查是否需要触发评分弹窗
+            if (closeCount >= 3 && !ratingTriggered) {
+                setTimeout(() => {
+                    triggerRatingPopup();
+                }, 500);
+            }
+            
+            // 创建新弹窗 - 关闭一个得到两个
+            setTimeout(() => {
+                const randomBlessing = blessings[Math.floor(Math.random() * blessings.length)];
+                createPopup(randomBlessing);
+            }, 300);
+            
+            setTimeout(() => {
+                const randomBlessing = blessings[Math.floor(Math.random() * blessings.length)];
+                createPopup(randomBlessing);
+            }, 600);
+            
+            // 移除弹窗
+            setTimeout(() => {
+                if (popup.parentNode) {
+                    popup.parentNode.removeChild(popup);
+                }
+            }, 300);
+        }
+        
+        // 使元素可拖动（移动端优化）
+        function makeDraggable(element) {
+            let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+            let isDragging = false;
+            
+            const header = element.querySelector('.popup-header');
+            
+            // 桌面端鼠标事件
+            header.onmousedown = dragMouseDown;
+            
+            // 移动端触摸事件
+            header.addEventListener('touchstart', touchStart, { passive: false });
+            header.addEventListener('touchmove', touchMove, { passive: false });
+            header.addEventListener('touchend', touchEnd);
+            
+            function dragMouseDown(e) {
+                e.preventDefault();
+                startDrag(e.clientX, e.clientY);
+                document.onmouseup = closeDragElement;
+                document.onmousemove = elementDrag;
+            }
+            
+            function touchStart(e) {
+                if (e.touches.length === 1) {
+                    const touch = e.touches[0];
+                    startDrag(touch.clientX, touch.clientY);
+                    element.classList.add('dragging');
+                    e.preventDefault();
+                }
+            }
+            
+            function touchMove(e) {
+                if (e.touches.length === 1 && isDragging) {
+                    const touch = e.touches[0];
+                    elementDragTouch(touch.clientX, touch.clientY);
+                    e.preventDefault();
+                }
+            }
+            
+            function touchEnd() {
+                closeDragElement();
+                element.classList.remove('dragging');
+            }
+            
+            function startDrag(clientX, clientY) {
+                isDragging = true;
+                pos3 = clientX;
+                pos4 = clientY;
+                element.style.zIndex = '1001';
+            }
+            
+            function elementDrag(e) {
+                if (!isDragging) return;
+                e.preventDefault();
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                updatePosition();
+            }
+            
+            function elementDragTouch(clientX, clientY) {
+                if (!isDragging) return;
+                pos1 = pos3 - clientX;
+                pos2 = pos4 - clientY;
+                pos3 = clientX;
+                pos4 = clientY;
+                updatePosition();
+            }
+            
+            function updatePosition() {
+                const newTop = element.offsetTop - pos2;
+                const newLeft = element.offsetLeft - pos1;
+                
+                // 边界检查，防止拖出屏幕
+                const maxTop = window.innerHeight - element.offsetHeight - 10;
+                const maxLeft = window.innerWidth - element.offsetWidth - 10;
+                
+                element.style.top = Math.max(10, Math.min(maxTop, newTop)) + "px";
+                element.style.left = Math.max(10, Math.min(maxLeft, newLeft)) + "px";
+            }
+            
+            function closeDragElement() {
+                isDragging = false;
+                document.onmouseup = null;
+                document.onmousemove = null;
+                
+                // 恢复弹窗的z-index
+                setTimeout(() => {
+                    element.style.zIndex = '1000';
+                }, 100);
+            }
+        }
+        
+        // 开始祝福仪式
+        function startBlessing() {
+            // 确保音乐播放
+            if (!isMusicPlaying) {
+                toggleMusic();
+            }
+            
+            // 隐藏主按钮
+            startBtn.style.opacity = '0';
+            startBtn.style.pointerEvents = 'none';
+            
+            // 创建多个祝福弹窗
+            const popupCount = 8; // 增加弹窗数量
+            for (let i = 0; i < popupCount; i++) {
+                setTimeout(() => {
+                    const randomBlessing = blessings[Math.floor(Math.random() * blessings.length)];
+                    createPopup(randomBlessing);
+                }, i * 300);
+            }
+            
+            // 显示提示信息
+            setTimeout(() => {
+                const hint = document.createElement('div');
+                hint.textContent = '点击关闭一个祝福，会得到两个新的祝福！';
+                hint.style.cssText = `
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: linear-gradient(145deg, #ffcc00, #ff9900);
+                    color: #cc0000;
+                    padding: ${isMobile ? '1rem 1.5rem' : '1.5rem 2rem'};
+                    border-radius: 10px;
+                    font-size: ${isMobile ? '1.1rem' : '1.3rem'};
+                    font-weight: bold;
+                    border: 3px solid #ff3333;
+                    z-index: 1002;
+                    text-align: center;
+                    max-width: 80%;
+                    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+                    animation: popIn 0.5s ease;
+                    letter-spacing: 0.1rem;
+                `;
+                document.body.appendChild(hint);
+                
+                setTimeout(() => {
+                    hint.style.opacity = '0';
+                    hint.style.transition = 'opacity 0.5s';
+                    setTimeout(() => {
+                        if (hint.parentNode) {
+                            hint.parentNode.removeChild(hint);
+                        }
+                    }, 500);
+                }, 3000);
+            }, 1500);
+        }
+        
+        // 切换音乐播放状态
+        function toggleMusic() {
+            if (isMusicPlaying) {
+                bgMusic.pause();
+                musicIcon.textContent = '♪';
+                musicControl.style.background = 'linear-gradient(145deg, #ff9900, #ffcc00)';
+            } else {
+                bgMusic.play().then(() => {
+                    musicIcon.textContent = '♫';
+                    musicControl.style.background = 'linear-gradient(145deg, #ffcc00, #ff9900)';
+                }).catch(e => {
+                    // 移动端友好提示
+                    if (isMobile) {
+                        const hint = document.createElement('div');
+                        hint.textContent = '请先点击页面任意位置激活音频';
+                        hint.style.cssText = `
+                            position: fixed;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            background: rgba(0,0,0,0.8);
+                            color: #ffcc00;
+                            padding: 1rem 1.5rem;
+                            border-radius: 10px;
+                            font-size: 1rem;
+                            z-index: 1003;
+                            text-align: center;
+                            animation: fadeInUp 0.5s ease;
+                        `;
+                        document.body.appendChild(hint);
+                        
+                        setTimeout(() => {
+                            hint.remove();
+                        }, 2000);
+                    }
+                });
+            }
+            isMusicPlaying = !isMusicPlaying;
+        }
+        
+        // 触发评分弹窗
+        function triggerRatingPopup() {
+            if (ratingTriggered) return;
+            
+            ratingTriggered = true;
+            ratingOverlay.classList.add('active');
+            ratingPopup.classList.add('active');
+            
+            // 重置评分状态
+            selectedRating = 0;
+            updateStars();
+            ratingFeedback.style.display = 'none';
+            ratingHint.style.display = 'none';
+            ratingSubmit.disabled = true;
+            
+            // 禁用所有其他交互
+            document.querySelectorAll('.blessing-popup').forEach(popup => {
+                popup.style.pointerEvents = 'none';
+                popup.style.opacity = '0.5';
+            });
+            
+            // 移动端锁定滚动
+            if (isMobile) {
+                document.body.style.overflow = 'hidden';
+            }
+        }
+        
+        // 高亮星星
+        function highlightStars(rating) {
+            stars.forEach(star => {
+                const starRating = parseInt(star.getAttribute('data-rating'));
+                if (starRating <= rating) {
+                    star.classList.add('active');
+                } else {
+                    star.classList.remove('active');
+                }
+            });
+        }
+        
+        // 更新星星显示
+        function updateStars() {
+            stars.forEach(star => {
+                const starRating = parseInt(star.getAttribute('data-rating'));
+                if (starRating <= selectedRating) {
+                    star.classList.add('active');
+                } else {
+                    star.classList.remove('active');
+                }
+            });
+        }
+        
+        // 提交评分
+        function submitRating() {
+            if (selectedRating === 0) {
+                ratingHint.textContent = '请先选择评分星级！';
+                ratingHint.style.display = 'block';
+                return;
+            }
+            
+            // 显示感谢信息
+            ratingFeedback.style.display = 'block';
+            document.querySelector('.rating-prompt').style.display = 'none';
+            document.querySelector('.stars-container').style.display = 'none';
+            ratingSubmit.style.display = 'none';
+            ratingHint.style.display = 'none';
+            
+            // 3秒后关闭弹窗
+            setTimeout(() => {
+                // 关闭评分弹窗
+                ratingOverlay.classList.remove('active');
+                ratingPopup.classList.remove('active');
+                
+                // 重新启用其他弹窗的交互
+                document.querySelectorAll('.blessing-popup').forEach(popup => {
+                    popup.style.pointerEvents = 'auto';
+                    popup.style.opacity = '1';
+                });
+                
+                // 移动端恢复滚动
+                if (isMobile) {
+                    document.body.style.overflow = '';
+                }
+                
+                // 创建最终祝福
+                setTimeout(() => {
+                    const finalBlessing = createPopup('🎊愿2026年马到成功，心想事成！ 🎊');
+                    finalBlessing.style.left = '50%';
+                    finalBlessing.style.top = '50%';
+                    finalBlessing.style.transform = 'translate(-50%, -50%)';
+                    finalBlessing.style.zIndex = '1002';
+                }, 500);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
